@@ -1,0 +1,191 @@
+{% load static %}
+
+
+<!DOCTYPE HTML>
+<html>
+	<head>
+
+        {% block addhead %}
+        {% endblock addhead %}
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Teachmall</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta name="author" content="" />
+
+        <!-- Facebook and Twitter integration -->
+        <meta property="og:title" content=""/>
+        <meta property="og:image" content=""/>
+        <meta property="og:url" content=""/>
+        <meta property="og:site_name" content=""/>
+        <meta property="og:description" content=""/>
+        <meta name="twitter:title" content="" />
+        <meta name="twitter:image" content="" />
+        <meta name="twitter:url" content="" />
+        <meta name="twitter:card" content="" />
+
+        <link rel="icon" href="{% static 'images/coffee.png' %}" type="png">
+
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+        
+        <!-- Animate.css -->
+        <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+        <!-- Icomoon Icon Fonts-->
+        <link rel="stylesheet" href="{% static 'css/icomoon.css' %}">
+        <!-- Themify Icons-->
+        <link rel="stylesheet" href="{% static 'css/themify-icons.css' %}">
+        <!-- Bootstrap  -->
+        <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+
+        <!-- Magnific Popup -->
+        <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+
+        <!-- Owl Carousel  -->
+        <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+        <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
+
+        <!-- Theme style  -->
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+        <!-- Modernizr JS -->
+        <script src="{% static 'js/modernizr-2.6.2.min.js' %}"></script>
+        <!-- FOR IE9 below -->
+        <!--[if lt IE 9]>
+        <script src="js/respond.min.js"></script>
+        <![endif]-->
+
+        </head>
+	<body>
+		
+    
+	
+        <div id="page">
+
+            <div class="page-inner">
+
+                {% block content %}
+                {% endblock content %}
+
+                <div id="head-top" style="position: absolute; width: 100%; top: 0; ">
+                    <div class="gtco-top">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-6 col-xs-6">
+                                    <div id="gtco-logo"><a href="{% url 'main:home' %}"><i>Teach</i><em>Mall</em></a></div>
+                                </div>
+                            </div>
+                        </div>	
+                    </div>
+                    <nav class="gtco-nav sticky-banner" role="navigation">
+                        <div class="gtco-container">
+                            
+                            <div class="row">
+                                <div class="col-xs-12 text-center menu-1">
+                                    <ul>
+                                        <li id="nav_home"><a href="{% url 'main:home' %}">Home</a></li>
+                                        <li id="nav_study" class="has-dropdown">
+                                            <a href="{% url 'main:study_programs' %}">Study</a>
+                                            <ul class="dropdown">
+                                                <li><a href="{% url 'main:python_study_plan' %}" id="nav_study_python">Python Basics</a></li>
+                                                <li><a href="#" id="nav_study_course2">HTML, CSS, JavaScript</a></li>
+                                                <li><a href="#" id="nav_study_course3">Web Development</a></li>
+                                                <li><a href="#" id="nav_study_course4">E-commerce projects</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li id="nav_about"><a href="{% url 'main:about' %}">About us</a></li>
+                                        <li id="nav_contact"><a href="{% url 'main:contact' %}">Contact</a></li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </nav>
+                </div>
+
+                <footer id="gtco-footer" role="contentinfo">
+                    <div class="gtco-container">
+                        <div class="row row-p b-md">
+                            <div class="col-md-4">
+                                <div class="gtco-widget">
+                                    <h3>About Us</h3>
+                                    <p>We provide quality education in the most interactive and funny approaches.</p>
+                                    <p><a href="{% url 'main:about' %}">Learn more...</a></p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 col-md-push-1">
+                                <div class="gtco-widget">
+                                    <h3>Get In Touch</h3>
+                                    <ul class="gtco-quick-contact">
+                                        <li><a href="#"><i class="icon-phone"></i> +1 234 567 890</a></li>
+                                        <li><a href="#"><i class="icon-mail2"></i> info@TeachMall.co</a></li>
+                                        <li><a href="#"><i class="icon-chat"></i> Live Chat</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row copyright">
+                            <div class="col-md-12">
+                                <p class="pull-left">
+                                    <small class="block">&copy; TeachMall. All Rights Reserved.</small>
+                                    <small class="block">Developed by 
+                                        <a href="https://www.linkedin.com/in/nikita-kirichenko-781062251/" target="_blank">Nikita Kirichenko</a> & 
+                                        <a href="https://www.linkedin.com/in/dmytro-biletskyi-4682a0251/" target="_blank">Dmytro Biletskyi</a>
+                                    </small>
+                                    <small class="block">Designed by 
+                                        <a href="http://GetTemplates.co/" target="_blank">GetTemplates.co</a>
+                                    </small>
+                                </p>
+                                <p class="pull-right">
+                                    <ul class="gtco-social-icons pull-right">
+                                        <li><a href="#"><img style='width: 40%; height: auto;' src="{% static 'images/icons8-gmail.svg' %}" alt="gmail SVG logo"/></a></li>
+                                    <li><a href="#"><img style='width: 40%; height: auto;' src="{% static 'images/icons8-instagram.svg' %}" alt="instagram SVG logo"/></a></li>
+                                    <li><a href="#"><img style='width: 40%; height: auto;' src="{% static 'images/icons8-telegram-app.svg' %}" alt="telegram SVG logo"/></a></li>
+                                    </ul>
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </footer>
+            </div>
+        </div>
+
+        <div class="gototop js-top">
+            <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+        </div>
+	</body>
+</html>
+
+<!-- jQuery -->
+<script src="{% static 'js/jquery.min.js' %}"></script>
+<!-- jQuery Easing -->
+<script src="{% static 'js/jquery.easing.1.3.js' %}"></script>
+<!-- Bootstrap -->
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<!-- Waypoints -->
+<script src="{% static 'js/jquery.waypoints.min.js' %}"></script>
+<script src="{% static 'js/sticky.js' %}"></script>
+<!-- Carousel -->
+<script src="{% static 'js/owl.carousel.min.js' %}"></script>
+<!-- countTo -->
+<script src="{% static 'js/jquery.countTo.js' %}"></script>
+<!-- Stellar Parallax -->
+<script src="{% static 'js/jquery.stellar.min.js' %}"></script>
+<!-- Magnific Popup -->
+<script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+<script src="{% static 'js/magnific-popup-options.js' %}"></script>
+
+<!-- Main -->
+<script src="{% static 'js/main.js' %}"></script>
+
+{% block js %}
+{% endblock js %}

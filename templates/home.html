@@ -1,0 +1,465 @@
+{% extends 'body.html' %}
+{% load static %}
+
+{% block addhead %}
+<!-- Font awesome-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Animate carousel.css -->
+<link rel="stylesheet" href="{% static 'css/carousel_review.css' %}">
+{% endblock addhead %}
+
+	
+{% block content %}
+
+	<header id="gtco-header" class="gtco-cover gtco-cover-md" role="banner" style="background-image: url({% static 'images/pexels-lukas-917463.jpg' %})" data-stellar-background-ratio="0.5">
+		<div class="overlay"></div>
+		<div class="gtco-container">
+			<div class="row row-mt-15em">
+				<div class="col-md-12 mt-text text-center animate-box" data-animate-effect="fadeInUp">
+					{% if message == 'success' %}
+						<div class="alert alert-success" role="alert">
+							<strong>You were successfully registered to our system! Check <a href="#" class="alert-link">your email</a> for more info.</strong>
+						</div>
+					{% elif message == 'error' %}
+						<div class="alert alert-danger" role="alert">
+							<strong style="color: red;" >Error! Please, check your credentials or try again later!</strong>
+						</div>
+					{% endif %}
+					<h1>We Build <strong>Branded Platforms</strong></h1>	
+					<h2>Far far away, behind the word mountains, far from the countries Vokalia.</h2>
+					{% comment %} <div class="text-center"><a href="#" class="btn btn-primary btn-lg popup-vimeo">Watch the video</a></div> {% endcomment %}
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="flex-section gtco-gray-bg">
+		<div class="col-1">
+			<div class="text">
+
+				<div class="row row-pb-sm">
+					<div class="col-md-12">
+					<h2>Creative Minds</h2>
+					
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae accusamus, fugiat ut! Ducimus accusamus, quos. Esse ea iste, expedita atque quod quo maxime, saepe! Architecto unde aliquid atque excepturi dolores dolore fugit rem recusandae amet a, molestiae et! Dolore, laborum?</p>
+					<p>Quaerat quisquam quasi minima at molestias porro accusantium qui atque doloremque ab, odio tempora obcaecati cumque veritatis quo, assumenda nihil dolor optio enim fugit accusamus laborum. Autem neque dignissimos, corrupti, fugiat labore nisi illo, delectus, alias natus optio distinctio culpa!</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<ul class="check-li">
+							<li>Quaerat quisquam quasi</li>
+							<li>Accusantium qui atque doloremque</li>
+							<li>Expedita atque quod</li>
+						</ul>
+					</div>
+					<div class="col-md-6">
+						<ul class="check-li">
+							<li>Quaerat quisquam quasi</li>
+							<li>Accusantium qui atque doloremque</li>
+							<li>Expedita atque quod</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-2 flex-img" style="background-image: url({% static 'images/pexels-andreea-ch-1166643.jpg' %});"></div>
+	</div>
+	
+	<div class="gtco-cover gtco-cover-sm" style="background-image: url({% static 'images/pexels-rodrigo-santos-3888151.jpg' %})"  data-stellar-background-ratio="0.5">
+		<div class="overlay"></div>
+		<div class="gtco-container text-center">
+			<div class="display-t">
+				<div class="display-tc">
+					<h1 class="animate-box">Never Stop Learning</h1>
+				</div>	
+			</div>
+		</div>
+	</div>
+
+	<div class="flex-section reverse">
+		<div class="col-1">
+			<div class="text">
+
+				<div class="row row-pb-sm">
+					<div class="col-md-12">
+						<h2>Expertise &amp; Beliefs</h2>
+						<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae accusamus, fugiat ut! Ducimus accusamus, quos. Esse ea iste, expedita atque quod quo maxime, saepe! Architecto unde aliquid atque excepturi dolores dolore fugit rem recusandae amet a, molestiae et! Dolore, laborum?</p>
+						<p>Quaerat quisquam quasi minima at molestias porro accusantium qui atque doloremque ab, odio tempora obcaecati cumque veritatis quo, assumenda nihil dolor optio enim fugit accusamus laborum. Autem neque dignissimos, corrupti, fugiat labore nisi illo, delectus, alias natus optio distinctio culpa!</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<ul class="check-li">
+							<li>Quaerat quisquam quasi</li>
+							<li>Accusantium qui atque doloremque</li>
+							<li>Expedita atque quod</li>
+						</ul>
+					</div>
+					<div class="col-md-6">
+						<ul class="check-li">
+							<li>Quaerat quisquam quasi</li>
+							<li>Accusantium qui atque doloremque</li>
+							<li>Expedita atque quod</li>
+						</ul>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		<div class="col-2 flex-img" style="background-image: url({% static 'images/pexels-olia-danilevich-4974915.jpg' %});"></div>
+	</div>
+
+	<div class="gtco-cover gtco-cover-sm" style="background-image: url({% static 'images/pexels-suzy-hazelwood-1629236.jpg' %})" data-stellar-background-ratio="0.5">
+		<div class="overlay"></div>
+		<div class="gtco-container text-center">
+			<div class="display-t">
+				<div class="display-tc">
+					<h1 class="animate-box">Quality Over Quantity</h1>
+				</div>	
+			</div>
+		</div>
+	</div>
+	
+	<div class="overflow-hid"> 
+		<div class="gtco-section">
+			<div class="gtco-container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center gtco-heading">
+						<h2>Services</h2>
+						<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+					</div>
+				</div>
+				<div class="row">
+
+					<div class="col-lg-4 col-md-4 col-sm-6">
+						<a href="#" class="gtco-card-item">
+							<figure>
+								<div class="overlay"><i class="ti-plus"></i></div>
+								<img src="{% static 'images/img_1.jpg' %}" alt="Image" class="img-responsive">
+							</figure>
+							<div class="gtco-text">
+								<h2>Data Analytics</h2>
+								<p>Far far away, behind the word mountains, far from the countries Vokalia..</p>
+								<p><span class="btn btn-primary">Learn more</span></p>
+							</div>
+						</a>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-6">
+						<a href="#" class="gtco-card-item">
+							<figure>
+								<div class="overlay"><i class="ti-plus"></i></div>
+								<img src="{% static 'images/img_2.jpg' %}" alt="Image" class="img-responsive">
+							</figure>
+							<div class="gtco-text">
+								<h2>Web Development</h2>
+								<p>Far far away, behind the word mountains, far from the countries Vokalia..</p>
+								<p><span class="btn btn-primary">Learn more</span></p>
+							</div>
+						</a>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-6">
+						<a href="#" class="gtco-card-item">
+							<figure>
+								<div class="overlay"><i class="ti-plus"></i></div>
+								<img src="{% static 'images/img_3.jpg' %}" alt="Image" class="img-responsive">
+							</figure>
+							<div class="gtco-text">
+								<h2>Branding</h2>
+								<p>Far far away, behind the word mountains, far from the countries Vokalia..</p>
+								<p><span class="btn btn-primary">Learn more</span></p>
+							</div>
+						</a>
+					</div>
+
+
+					<div class="col-lg-4 col-md-4 col-sm-6">
+						<a href="#" class="gtco-card-item">
+							<figure>
+								<div class="overlay"><i class="ti-plus"></i></div>
+								<img src="{% static 'images/img_1.jpg' %}" alt="Image" class="img-responsive">
+							</figure>
+							<div class="gtco-text">
+								<h2>eCommerce Development</h2>
+								<p>Far far away, behind the word mountains, far from the countries Vokalia..</p>
+								<p><span class="btn btn-primary">Learn more</span></p>
+							</div>
+						</a>
+					</div>
+
+					<div class="col-lg-4 col-md-4 col-sm-6">
+						<a href="#" class="gtco-card-item">
+							<figure>
+								<div class="overlay"><i class="ti-plus"></i></div>
+								<img src="{% static 'images/img_2.jpg' %}" alt="Image" class="img-responsive">
+							</figure>
+							<div class="gtco-text">
+								<h2>Design &amp; UX</h2>
+								<p>Far far away, behind the word mountains, far from the countries Vokalia..</p>
+								<p><span class="btn btn-primary">Learn more</span></p>
+							</div>
+						</a>
+					</div>
+
+					<div class="col-lg-4 col-md-4 col-sm-6">
+						<a href="#" class="gtco-card-item">
+							<figure>
+								<div class="overlay"><i class="ti-plus"></i></div>
+								<img src="{% static 'images/img_3.jpg' %}" alt="Image" class="img-responsive">
+							</figure>
+							<div class="gtco-text">
+								<h2>Strategy</h2>
+								<p>Far far away, behind the word mountains, far from the countries Vokalia..</p>
+								<p><span class="btn btn-primary">Learn more</span></p>
+							</div>
+						</a>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		
+		<div id="gtco-features">
+			<div class="gtco-container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center gtco-heading animate-box">
+						<h2>How We Work</h2>
+						<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4 col-sm-6">
+						<div class="feature-center animate-box" data-animate-effect="fadeIn">
+							<span class="icon">
+								<i>1</i>
+							</span>
+							<h3>Design</h3>
+							<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident.</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6">
+						<div class="feature-center animate-box" data-animate-effect="fadeIn">
+							<span class="icon">
+								<i>2</i>
+							</span>
+							<h3>Develop</h3>
+							<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident.</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6">
+						<div class="feature-center animate-box" data-animate-effect="fadeIn">
+							<span class="icon">
+								<i>3</i>
+							</span>
+							<h3>Launch</h3>
+							<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident.</p>
+						</div>
+					</div>
+					
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="gtco-cover gtco-cover-sm" style="background-image: url({% static 'images/pexels-tirachard-kumtanom-733852.jpg' %})"  data-stellar-background-ratio="0.5">
+		<div class="overlay"></div>
+		<div class="gtco-container text-center">
+			<div class="display-t">
+				<div class="display-tc">
+					<div class="gtco-section">
+						<div class="gtco-container">
+							<div class="wrapper">
+								<div class="testimonial-container" id="testimonial-container"></div>
+								<button id="prev">&lt;</button>
+								<button id="next">&gt;</button>
+							</div>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</div>
+	</div>
+
+	<div id="gtco-counter" class="gtco-section">
+		<div class="gtco-container">
+
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center gtco-heading animate-box">
+					<h2>Facts</h2>
+					<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+				</div>
+			</div>
+
+			<div class="row">
+				
+				<div class="col-md-3 col-sm-6 animate-box" data-animate-effect="fadeInUp">
+					<div class="feature-center">
+						<span class="counter js-counter" data-from="0" data-to="196" data-speed="5000" data-refresh-interval="50">1</span>
+						<span class="counter-label">Learners</span>
+
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 animate-box" data-animate-effect="fadeInUp">
+					<div class="feature-center">
+						<span class="counter js-counter" data-from="0" data-to="4" data-speed="5000" data-refresh-interval="50">1</span>
+						<span class="counter-label">Courses</span>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 animate-box" data-animate-effect="fadeInUp">
+					<div class="feature-center">
+						<span class="counter js-counter" data-from="0" data-to="234" data-speed="5000" data-refresh-interval="50">1</span>
+						<span class="counter-label">Sections</span>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 animate-box" data-animate-effect="fadeInUp">
+					<div class="feature-center">
+						<span class="counter js-counter" data-from="0" data-to="12202" data-speed="5000" data-refresh-interval="50">1</span>
+						<span class="counter-label">Line of codes</span>
+
+					</div>
+				</div>
+					
+			</div>
+		</div>
+	</div>
+
+	<div class="gtco-section gtco-gray-bg">
+		<div class="gtco-container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="col-md-6 animate-box">
+					<h3>Get In Touch</h3>
+					<form method='POST' action="{% url 'main:home' %}">
+					{% csrf_token %}
+						{% for field in form %}
+							<div class="row form-group">
+								<div class="col-md-12">
+									{{ field.label }}
+									{{ field }}
+								</div>
+							</div>
+						{% endfor %}
+						<div class="form-group">
+							<input type="submit" value="Send Message" class="btn btn-primary">
+						</div>
+
+					</form>
+
+					</div>
+					<div class="col-md-5 col-md-push-1 animate-box">
+						
+						<div class="gtco-contact-info">
+							<h3>Contact Information</h3>
+							<ul>
+								<li class="address">198 West 21th Street, <br> Suite 721 New York NY 10016</li>
+								<li class="phone"><a href="tel://1234567920">+ 1235 2355 98</a></li>
+								<li class="email"><a href="mailto:info@yoursite.com">info@yoursite.com</a></li>
+								<li class="url"><a href="#">Site link</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+{% endblock content %}
+
+
+{% block js %}
+
+<script>
+	//Testimonial Data
+const testimonials = [
+    {
+		name: "Eva Sawyer",
+        job: "CEO, Fashworks",
+        image: "{% static 'images/coffee.png' %}",
+        testimonial:
+          "Neque volutpat ac tincidunt vitae semper quis lectus nulla at volutpat diam ut venenatis tellus in metus vulputate eu scelerisque felis imperdiet proin fermentum leo vel orci porta non pulvinar neque laoreet suspendisse interdum consectetur",
+    },
+    {
+      name: "Katey Topaz",
+      job: "Developer, TechCrew",
+      image: "{% static 'images/coffee.png' %}",
+      testimonial:
+        "Elementum tempus egestas sed sed risus pretium quam vulputate dignissim suspendisse in est ante in nibh mauris cursus mattis molestie a iaculis at erat pellentesque adipiscing commodo elit at imperdiet dui accumsan sit amet nulla",
+    },
+    {
+      name: "Jae Robin",
+      job: "UI Designer, Affinity Agency",
+      image: "{% static 'images/coffee.png' %}",
+      testimonial:
+        "Orci nulla pellentesque dignissim enim sit amet venenatis urna cursus eget nunc scelerisque viverra mauris in aliquam sem fringilla ut morbi tincidunt augue interdum velit euismod in pellentesque massa placerat duis ultricies lacus sed turpis",
+    },
+    {
+      name: "Nicola Blakely",
+      job: "CEO,Zeal Wheels",
+      image: "{% static 'images/coffee.png' %}",
+      testimonial:
+        "Sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit",
+    },
+  ];
+  //Current Slide
+  let i = 0;
+  //Total Slides
+  let j = testimonials.length;
+  let testimonialContainer = document.getElementById("testimonial-container");
+  let nextBtn = document.getElementById("next");
+  let prevBtn = document.getElementById("prev");
+  let isPaused = false;
+  // Function to switch to the next testimonial
+  const nextTestimonial = () => {
+    if (!isPaused) {
+      i = (j + i + 1) % j;
+      displayTestimonial();
+    }
+  };
+
+  let displayTestimonial = () => {
+    testimonialContainer.innerHTML = `
+      <p>${testimonials[i].testimonial}</p>
+      <img src=${testimonials[i].image}>
+      <h3>${testimonials[i].name}</h3>
+      <h6>${testimonials[i].job}</h6>
+	  <span class="fa fa-star checked"></span>
+	  <span class="fa fa-star checked"></span>
+	  <span class="fa fa-star checked"></span>
+	  <span class="fa fa-star checked"></span>
+	  <span class="fa fa-star checked"></span>
+    `;
+  };
+
+  // Call the displayTestimonial function to show the first testimonial immediately
+  displayTestimonial();
+
+  // Function to pause the automatic slideshow for 10 seconds
+  const pauseSlideshow = () => {
+    isPaused = true;
+    setTimeout(() => {
+      isPaused = false;
+    }, 10000); // 100000ms (10 seconds) delay
+  };
+
+  // Start the automatic slideshow
+  setInterval(nextTestimonial, 5000); // 2000ms (5 seconds) interval
+
+  /// Add click event listeners for manual navigation
+  nextBtn.addEventListener("click", () => {
+    i = (j + i + 1) % j;
+    displayTestimonial();
+    pauseSlideshow();
+  });
+
+  prevBtn.addEventListener("click", () => {
+    i = (j + i - 1) % j;
+    displayTestimonial();
+    pauseSlideshow();
+  });
+
+  document.getElementById("nav_home").classList.add("active")
+</script>
+
+{% endblock js %}

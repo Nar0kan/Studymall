@@ -1,0 +1,107 @@
+.card {
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    width: 270px;
+  }
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+  
+  .card svg {
+    position: absolute;
+    display: flex;
+    width: 60%;
+    height: 100%;
+    font-size: 24px;
+    font-weight: 700;
+    opacity: 1;
+    transition: opacity 0.25s;
+    z-index: 2;
+    cursor: pointer;
+  }
+  
+  .card .social-link1,.card .social-link2,.card .social-link3,.card .social-link4 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    color: whitesmoke;
+    font-size: 24px;
+    text-decoration: none;
+    transition: 0.25s;
+    border-radius: 50px;
+  }
+  
+  .card svg {
+    transform: scale(1);
+  }
+  .card .social-link1 {
+    background: #f0943355;
+    background: -moz-linear-gradient(45deg, #f0943355 0%, #e6683c55 25%, #dc274355 50%, #cc236655 75%, #bc188855 100%);
+    background: -webkit-linear-gradient(45deg, #f0943355 0%,#e6683c55 25%,#dc274355 50%,#cc236655 75%,#bc188855 100%);
+    background: linear-gradient(45deg, #f0943355 0%,#e6683c55 25%,#dc274355 50%,#cc236655 75%,#bc188855 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0943355', endColorstr='#bc188855',GradientType=1 );
+    animation: bounce_613 0.4s linear;
+  }
+  
+  .card .social-link2{
+    background-color: #00ccff55;
+    animation: bounce_613 0.4s linear;
+  }
+  
+  .card .social-link3{
+    background-color: #5865f255;
+    animation: bounce_613 0.4s linear;
+  }
+  
+  .card .social-link4{
+    background-color: #12a50b55;
+    animation: bounce_613 0.4s linear;
+  }
+  
+  .card .social-link1:hover {
+    background: #f09433;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+    animation: bounce_613 0.4s linear;
+  }
+  
+  .card .social-link2:hover {
+    background-color: #00ccff;
+    animation: bounce_613 0.4s linear;
+  }
+  
+  .card .social-link3:hover {
+    background-color: #5865f2;
+    animation: bounce_613 0.4s linear;
+  }
+  
+  .card .social-link4:hover {
+    background-color: #12a50b;
+    animation: bounce_613 0.4s linear;
+  }
+  
+  @keyframes bounce_613 {
+    40% {
+      transform: scale(1.4);
+    }
+  
+    60% {
+      transform: scale(0.8);
+    }
+  
+    80% {
+      transform: scale(1.2);
+    }
+  
+    100% {
+      transform: scale(1);
+    }
+  }

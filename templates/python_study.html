@@ -1,0 +1,149 @@
+{% extends 'body.html' %}
+{% load static %}
+
+
+{% block addhead %}
+<!-- Bootstrap  -->
+<link rel="stylesheet" href="{% static 'css/timeline.css' %}">
+{% endblock addhead %}
+
+
+{% block content %}
+
+	<header id="gtco-header" class="gtco-cover gtco-cover-sm" role="banner" style="background-image: url(images/img_bg_4.jpg)" data-stellar-background-ratio="0.5">
+		<div class="overlay"></div>
+		<div class="gtco-container">
+			<div class="row row-mt-15em">
+				<div class="col-md-12 mt-text text-center animate-box" data-animate-effect="fadeInUp">
+					<h1>Python Basics <strong>Course</strong></h1>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	
+	<div class="gtco-section">
+		<div class="flex-section reverse">
+			<div class="col-md-6 gtco-gray-bg">
+				<div class="gtco-container timeline-container" data-animate-effect="fadeInUp">
+					<h1>Program overview</h1>
+					<ul>
+						<li style="--accent-color:#41516C">
+							<div class="date">Programming</div>
+							<div class="title">What is programming?</div>
+							<div class="descr">You will learn how the software is being built, where to start your journey and how to automate your life.</div>
+						</li>
+						<li style="--accent-color:#FBCA3E">
+							<div class="date">Python</div>
+							<div class="title">Python basics</div>
+							<div class="descr">Which datatypes are used and what they should store. How to call a method. What does Python offers for developers.</div>
+						</li>
+						<li style="--accent-color:#E24A68">
+							<div class="date">Functional programming</div>
+							<div class="title">Algorithms, functions and more</div>
+							<div class="descr">If statements, loops, search and sort, recursion, modules and more.</div>
+						</li>
+						<li style="--accent-color:#1B5F8C">
+							<div class="date">OOP</div>
+							<div class="title">How to write big programs</div>
+							<div class="descr">OOP is a must in nowadays. Dive forward into it with us.</div>
+						</li>
+						<li style="--accent-color:#4CADAD">
+							<div class="date">Best practices</div>
+							<div class="title">Clean code &amp; Debug process</div>
+							<div class="descr">What is PEP-8. Why do you need test your code and review it time to time. And where you can share it.</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="col-md-6 gtco-heading">
+				<div class="text">
+					<div class="row row-pb-sm">
+						<div class="col-md-12">
+							<h2>Programming &amp; Python</h2>
+							<p>Module 1: Programming Basics</p>
+							<p>	
+								Programming is the art of giving instructions to a computer to perform tasks. In this module, 
+								you'll embark on your programming journey by understanding what programming is and why it's such 
+								a valuable skill in today's world. You'll explore the fundamental concepts that underlie all 
+								programming languages and gain insight into how computers interpret your commands.
+							</p>
+
+							<p>Module 2: Python Basics</p>
+							<p>	
+								Now that you understand the essence of programming, 
+								it's time to dive into Python, one of the most beginner-friendly languages out there. 
+								This module will introduce you to Python's syntax, data types, and variables. You'll learn 
+								how to manipulate strings and numbers, write your first Python programs, and gain a solid grasp 
+								of the language's grammar.
+							</p>
+
+							<p>Module 3: Functional Programming</p>
+							<p>
+								Coding is not just about writing lines of text – it's about solving problems and making decisions. 
+								In this module, you'll explore the world of conditionals (if-else statements) and loops. 
+								These essential tools will allow you to create programs that can make choices and repeat actions, 
+								helping you build more complex and dynamic applications. You'll also dip your toes into basic algorithms, 
+								paving the way for efficient problem-solving.
+							</p>
+
+							<p>Module 4: Object-Oriented Programming (OOP)</p>
+							<p>
+								As your programs become more intricate, managing complexity becomes paramount. 
+								That's where Object-Oriented Programming comes into play. In this module, you'll discover the power 
+								of OOP – a programming paradigm that organizes code around objects, making it easier to conceptualize 
+								and structure your projects. You'll learn about classes, objects, inheritance, and polymorphism, 
+								gaining a deeper understanding of software architecture.
+							</p>
+
+							<p>Module 5: Clean Code and Debugging</p>
+							<p>
+								Writing code is one thing; writing clean, maintainable code is another. In this final module, you'll 
+								learn the art of crafting code that not only works but is also easy to read and collaborate on. 
+								You'll explore coding best practices, naming conventions, and the importance of documentation. 
+								Additionally, you'll delve into debugging techniques, helping you identify and rectify errors that
+								inevitably arise during development.
+							</p>
+
+							<p>
+								By the end of this Python Basics course, you'll have gained a solid foundation in programming, 
+								equipped with the knowledge and skills to tackle a wide range of projects. Whether you're aspiring 
+								to become a professional developer or simply want to harness the power of coding for your personal 
+								projects, this course will set you on the right path.
+							</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6">
+							<ul class="check-li">
+								<li>Interactive Coding Environments</li>
+								<li>Coding Challenges and Exercises</li>
+								<li>Project-Based Learning</li>
+							</ul>
+						</div>
+						<div class="col-md-6">
+							<ul class="check-li">
+								<li>Visual Aids and Animations</li>
+								<li>Real-World Examples</li>
+								<li>Live Coding Sessions</li>
+							</ul>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+{% endblock content %}
+
+{% block js %}
+
+<script>
+	document.getElementById("nav_study").classList.add("active")
+	document.getElementById("nav_study_python").style = "color: #66D37E;"
+</script>
+
+{% endblock js %}
